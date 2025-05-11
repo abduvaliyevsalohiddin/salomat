@@ -35,3 +35,4 @@ class Recommendations(CoreModel):
 
     def __str__(self):
         return f"{self.doctor} && {self.patient}"
+
