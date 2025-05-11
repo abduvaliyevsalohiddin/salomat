@@ -22,7 +22,7 @@ class Order(CoreModel):
     consultation_date = models.DateTimeField()
     consultation_time = models.CharField(max_length=10, blank=True, null=True)
     additional_notes = models.TextField(blank=True, null=True)
-    # status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='waiting')
+    status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='waiting')
 
     def __str__(self):
         return f"{self.doctor} && {self.patient} && {self.consultation_date}"
